@@ -1,0 +1,307 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: "josefin Sans",sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.main-page{
+    
+    display:grid;
+    grid-column: 2rem;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr min-content;
+   
+}
+body{
+    background-color: rgb(213, 207, 207);
+}
+
+
+.left{
+    background-color: rgb(71, 71, 214);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    
+}
+.right{
+    margin-left: 2rem;
+}
+.left-content{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.left-content h3{
+   color: white;
+   font-size: 1.5rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.left-content i{
+    
+    font-size: 2rem;
+    color: whitesmoke;
+    
+ }
+ .right{
+    padding: 1rem, 2rem;
+    margin-top: 2rem;
+    display: flex;
+    
+ }
+
+.right-form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+ .right-form input{
+    width: 20rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    padding: 0 10px;
+    margin: 20px;
+    border:0.1rem solid white;
+    border-radius: .5rem;
+     
+ }
+
+
+.name{
+   font-weight: bold;
+   font-size: 3rem;
+   justify-content: center;
+   padding: 6rem;
+   top: 2rem ;
+}
+
+ .right-middle{
+    text-align: center;
+ }
+ .right-form input:focus{
+    background-color: rgb(156, 156, 186);
+ }
+ .right label{
+    padding:1rem 1rem;
+    margin-left: 25rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: rgb(165, 165, 197);
+    border-top: 1rem;
+
+ }
+ .right label:hover{
+    color: black;
+
+ }
+ .login-bt{
+    width: 6rem;
+    background-color: #fff;
+    color: blue;
+    border: 0.1rem solid blue;
+    border-radius: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+ }
+ .login-bt:hover{
+    background-color:rgb(58, 58, 179) ;
+    color: white;
+ }
+ .right-middle{
+    margin-top: 15rem;
+    font-size: 2rem;
+    padding:1rem 0;
+ }
+ .right-middle i{ 
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: blue;
+    margin-right: 5rem;
+ }
+  h2{
+    padding:5rem 0;
+    font-size:2rem;
+ }
+ .sign-up{
+    background-color: skyblue;
+    color:black;
+    width: 20rem;
+    border-radius: 2rem;
+    font-size: 1.7rem;
+ }
+ .login{
+   
+    color:black;
+    width: 20rem;
+    border-radius: 2rem;
+    font-size: 1.7rem;
+ }
+ .sign-up:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+ }
+ .login:hover{
+    background-color: rgb(199, 199, 216);
+    cursor: pointer;
+ }
+.footer{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    background-color: rgb(220, 198, 198);
+   
+    padding: 1rem;
+}
+.footer ul{
+   display: flex;
+     justify-content: center; 
+    list-style: none;
+}
+.footer a{
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/*login-page*/
+.login-page{
+   display:grid;
+   width: 100%;
+   height: 100vh;
+   grid-template-columns: minmax(5rem,1fr) 2fr minmax(5rem,1fr);
+   grid-template-rows: repeat(2,min-content)1fr;
+   grid-row-gap:1.5rem;
+}
+.navigation{
+   grid-column: 1/-1;
+   grid-row: 1/2;
+   background-color: #fff;
+   padding:2.5rem 0;
+}
+.login-ul{
+   width: 100rem;
+   height: auto;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   list-style: none;
+   
+}
+.login-ul li{
+   font-size: 2rem;
+   margin: 0.5rem 2rem;
+   text-decoration: none;
+   color: black;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-left: 3rem;
+   margin-top: 2rem;
+}
+.login-ul a{
+   color:black;
+   text-decoration: none;
+}
+.login-ul i{
+   color: blue;
+   margin-right: 0.5rem;
+}
+.login-ul li:last-child{
+   margin-left: auto;
+}
+
+
+.login-page2{
+   grid-column: 2/3;
+   grid-row: 2/3;
+   width: 100rem;
+   display: grid;
+   grid-template-columns: 10rem 8fr;
+   grid-template-rows: 2fr 1fr;
+   background-color: white;
+   
+}
+.login-ul a:hover{
+   color: blue;
+}
+.login-content{
+   
+  grid-column: 1/-1;
+  grid-row: 1/-2;
+   background-color:white;
+   margin-left: 3rem;
+}
+.login-page-footer{
+   grid-column: 1/-1;
+   grid-row: 2/-1;
+   background-color:gray;
+   font-size:2rem ;
+   padding-left:3rem;
+   padding-top: 1rem;
+}
+.login-content h2{
+   margin-bottom: 7rem;
+   padding-top: -1rem;
+   font-size: 3rem;
+   padding:1rem 3rem;
+
+}
+.login-form{
+   margin-bottom: 6rem;
+   margin-left: 3rem;
+}
+.user-login{
+   margin-bottom: 3rem;
+   font-size: 2rem;
+}
+.user-password{
+   font-size: 2rem;
+   margin-bottom: 1rem;
+}
+.login-form label{
+   font-size: 1.5rem;
+}
+.login-form-btn{
+   font-size: 1.5rem;
+   margin-left: 1rem;
+   border-color: blue;
+   color: blue;
+   width: 6rem;
+   height: 2.5rem;
+   border-radius: 0.5rem;
+   cursor: pointer;
+}
+.login-form a{
+   font-size: 1.5rem;
+   margin-top: 3rem;
+   padding:1rem 0;
+}
+
+.login-form input{
+   padding: 0 1rem;
+}
+.login-form-btn:hover{
+   background-color: blue;
+   color: white;
+}
+.login-form input:focus{
+      background-color: rgb(194, 194, 205);
+}
+.login-page-footer p{
+   padding:1rem 2rem;
+}
